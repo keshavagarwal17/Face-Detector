@@ -1,0 +1,19 @@
+{
+  "name": "face-api-proj1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "face-api.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/The-Keshav-Agarwal/Face-Detector.git"
+  },
+  "author": "Keshav Agarwal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/The-Keshav-Agarwal/Face-Detector/issues"
+  },
+  "homepage": "https://github.com/The-Keshav-Agarwal/Face-Detector#readme"
+}
