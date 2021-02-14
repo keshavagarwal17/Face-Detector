@@ -26,14 +26,10 @@ video.addEventListener("playing",()=>{
     const displaySize = { width: video.width, height: video.height }
     faceapi.matchDimensions(canvas,displaySize);
     setInterval(async()=>{
-        const detection = await faceapi.detectAllFaces(video,new faceapi.TinyFaceDetectorOptions())
-        .withFaceLandmarks()
-        .withFaceExpressions();
+        const detection = await faceapi.detectAllFaces(video,new faceapi.TinyFaceDetectorOptions());
         const resizedDetections = faceapi.resizeResults(detection,displaySize);
         canvas.getContext('2d').clearRect(0, 0, canvas.width, canvas.height)
         faceapi.draw.drawDetections(canvas,resizedDetections);
-        faceapi.draw.drawFaceLandmarks(canvas,resizedDetections);
-        faceapi.draw.drawFaceExpressions(canvas,resizedDetections);
     },1000)
 })
 
